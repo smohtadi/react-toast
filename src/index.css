@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --radius: 0.5rem;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toast-enter {
+  opacity: 0;
+}
+
+.toast-enter-active {
+  opacity: 1;
+}
+
+.toast-exit {
+  opacity: 0.3;
+}
+
+.toast-exit-active {
+  opacity: 0;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+body {
+  background-color: hsl(220, 14%, 96%);
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
